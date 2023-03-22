@@ -1,30 +1,19 @@
-"use strict";
+const numerOfFilms = +prompt( "How many movies have you watched?", "");
 
-//alert 'Hello'
-// const result = confirm("Are u here?");
-// console.log(result);
+const personalMoviesDB= {
+	Count: numerOfFilms,
+	Movies: {},
+	Actors: {},
+	genres: [],
+	privat: false
+};
 
-// const answer = prompt("Вам есть 18?", "18");
-// console.log(typeof(answer));
+const a = prompt("The last movie you watched?", "" ),
+	  b = prompt ("How can you rate it?" , ""),
+	  c = prompt("The last movie you watched?", "" ),
+	  d = prompt ("How can you rate it?" , "");
 
-const answers = [] ;
+personalMoviesDB.Movies[a] = b;
+personalMoviesDB.Movies[c] = d;
 
-// answers[0] = prompt("Ваше имя?" , "") ;
-// answers[1] = prompt("Ваша фамилия" , "") ;
-// answers[2] = prompt("Ваше Дата рождения" , "") ;
-
-// console.log	(typeof(answers));
-
-
-// const category = "toys" ;
-// console.log(`https://someurl.com/${category}/5`)
-
-// const user = "ivan";
-// alert(`Hello, ${user}`);
-console.log(2*4 === 8);
-
-const isChecked = false,
-	isClose = false;
-
-
-console.log(isChecked || !isClose);
+console.log(personalMoviesDB);
